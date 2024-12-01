@@ -8,11 +8,16 @@ type testCase struct {
 }
 
 func TestPartOne(t *testing.T) {
-	example := ``
+	example := `3   4
+4   3
+2   5
+1   3
+3   9
+3   3`
 
 	tc := testCase{
 		input:    []byte(example),
-		expected: 0,
+		expected: 11,
 	}
 
 	if got := partOne(tc.input); got != tc.expected {
@@ -21,11 +26,16 @@ func TestPartOne(t *testing.T) {
 }
 
 func TestPartTwo(t *testing.T) {
-	example := ``
+	example := `3   4
+4   3
+2   5
+1   3
+3   9
+3   3`
 
 	tc := testCase{
 		input:    []byte(example),
-		expected: 0,
+		expected: 31,
 	}
 
 	if got := partTwo(tc.input); got != tc.expected {
